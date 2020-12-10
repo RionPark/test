@@ -10,8 +10,8 @@ public class StringTest {
 //		System.out.println(str.contains("가")&&str.contains("다"));
 //		str = str.replace("가나", "우리");
 //		System.out.println(str);
-		str = "  하이  ";
-		str = str.trim();
+		str = "  하  이  ";
+		str = str.replace(" ","");
 		System.out.println(str);
 	}
 }
