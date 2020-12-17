@@ -19,19 +19,22 @@ public class FindMine2 {
 		Scanner s = new Scanner(System.in);
 		System.out.print("1-5 숫자 : ");
 		int myStr = Integer.parseInt(s.nextLine());
-		int idx = 0;
 		for(int i=0;i<strs.length;i++) {
 			if(strs[i].equals("꽝")) {
-				idx = i+1;
+				if(i+1==myStr) {
+					System.out.println("찾았다");
+				}else {
+					System.out.println("틀렸다");
+				}
 				break;
 			}
 		}
 		
-		if(myStr==idx) {
-			System.out.println("찾았다!");
-		}else {
-			System.out.println("틀렸다!");
-		}
+//		if(myStr==idx) {
+//			System.out.println("찾았다!");
+//		}else {
+//			System.out.println("틀렸다!");
+//		}
 	}
 }
 
